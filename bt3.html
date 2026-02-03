@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khóa Học FrontEnd</title>
+    <style>
+        /* 1. Định dạng chung của trang */
+        body {
+            font-family: Arial;
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* 2. Tiêu đề chính (h1) */
+        h1 {
+            color: #1d4ed8;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        /* 3. Phần thông tin thời gian – địa điểm */
+        /* Nhãn thông tin */
+        span.label {
+            color: #dc2626;
+            font-weight: bold;
+        }
+
+        /* Nội dung */
+        span.value {
+            color: #000;
+            font-size: 16px;
+        }
+
+        /* 4. Tiêu đề phụ (h3) */
+        h3 {
+            color: #7c3aed;
+            font-size: 22px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* 5. Đoạn giới thiệu (p) */
+        p {
+            color: #065f46;
+            font-size: 15px;
+            line-height: 1.7;
+            text-align: left;
+        }
+
+        /* 6. Bảng thông tin (table) */
+        /* Tiêu đề bảng */
+        th {
+            color: #2563eb;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        /* Nội dung bảng */
+        td {
+            color: #374151;
+            font-size: 15px;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        /* Danh sách trong bảng */
+        ul,
+        li {
+            color: #92400e;
+            font-size: 14px;
+        }
+
+        /* 7. Form đăng ký */
+        /* Tiêu đề nhóm */
+        legend {
+            color: #be185d;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Nhãn nhập liệu */
+        label {
+            color: #1e40af;
+            font-weight: bold;
+        }
+
+        /* Ô nhập liệu, chọn và nút bấm */
+        input,
+        select,
+        textarea,
+        button {
+            font-family: Arial;
+            font-size: 14px;
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>KHÓA HỌC LẬP TRÌNH FRONTEND</h1>
+
+    <div>
+        <span class="label">Thời gian:</span>
+        <span class="value">Thứ 2,4,6 từ 18:30-21:30</span>
+    </div>
+    <div>
+        <span class="label">Khai giảng:</span>
+        <span class="value">15/01/2024</span>
+    </div>
+    <div>
+        <span class="label">Học phí:</span>
+        <span class="value">6.500.000 VNĐ </span>
+    </div>
+
+    <h3>GIỚI THIỆU KHÓA HỌC</h3>
+
+    <p>Khóa học FrontEnd cung cấp kiến thức toàn diện về phát triển giao diện web. Học viên sẽ thành thạo HTML, CSS,
+        JavaScript và các framework hiện đại như ReactJS.</p>
+
+    <p>Sau khóa học, học viên có thể xây dựng website responsive, tương tác và đáp ứng đầy đủ yêu cầu của nhà tuyển
+        dụng.</p>
+
+    <h3>NỘI DUNG HỌC</h3>
+
+    <table border="1">
+        <tr>
+            <th>Tuần</th>
+            <th>Chủ đề</th>
+            <th>Nội dung chi tiết</th>
+        </tr>
+        <tr>
+            <td>1-2</td>
+            <td>HTML & CSS</td>
+            <td>
+                <ul>
+                    <li>Cấu trúc HTML5</li>
+                    <li>CSS Selectors</li>
+                    <li>Flexbox & Grid</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>3-5</td>
+            <td>JavaScript</td>
+            <td>
+                <ul>
+                    <li>ES6+ Syntax</li>
+                    <li>DOM Manipulation</li>
+                    <li>Async/Await</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>6-8</td>
+            <td>ReactJS</td>
+            <td>
+                <ul>
+                    <li>Components & Props</li>
+                    <li>State & Hooks</li>
+                    <li>React Router</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>9-10</td>
+            <td>Dự Án Thực Tế</td>
+            <td>
+                <ul>
+                    <li>Xây dựng E-commerce</li>
+                    <li>Portfolio Website</li>
+                    <li>Deployment & Hosting</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <h3>ĐĂNG KÝ THAM GIA</h3>
+
+    <form>
+        <fieldset>
+            <legend>THÔNG TIN ĐĂNG KÝ</legend>
+
+            <label for="name">Họ và tên:</label><br>
+            <input type="text" id="name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email"><br><br>
+
+            <label for="phone">Số điện thoại:</label><br>
+            <input type="tel" id="phone"><br><br>
+
+            <label for="course">Khóa học:</label><br>
+            <select id="course">
+                <option>FrontEnd Cơ bản</option>
+                <option>FrontEnd Nâng cao</option>
+                <option>Fullstack Development</option>
+            </select><br><br>
+
+            <label for="note">Ghi chú:</label><br>
+            <textarea id="note" rows="4"></textarea><br><br>
+
+            <button type="submit">Đăng ký ngay</button>
+        </fieldset>
+    </form>
+</body>
+
+</html>
