@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MyShop</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: #f5f5f5;
+        }
+
+        /* HEADER */
+        header {
+            background: #222;
+            color: #fff;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            margin: 0;
+            padding: 0;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* BANNER */
+        .banner {
+            text-align: center;
+            padding: 60px 20px;
+            background: #fff;
+        }
+
+        .banner h1 {
+            margin-bottom: 10px;
+        }
+
+        /* PRODUCTS */
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px 20px;
+            background: #fff;
+        }
+
+        .card {
+            width: 230px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: contain;
+        }
+
+        .sale {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: red;
+            color: #fff;
+            font-size: 12px;
+            padding: 3px 6px;
+        }
+
+        .price {
+            color: red;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>MyShop</h2>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </header>
+
+    <div class="banner">
+        <h1>Welcome to MyShop</h1>
+        <p>Best products with best prices</p>
+    </div>
+
+    <div class="products">
+        <div class="card">
+            <span class="sale">SALE</span>
+            <img
+                src="https://whimsical-snickerdoodle-603461.netlify.app/img/2024_3_7_638454239916491907_pc-gaming-e-power-n3050-core-i5-12400f.webp">
+            <h4>Product 1</h4>
+            <p>Simple product description</p>
+            <div class="price">$100</div>
+        </div>
+
+        <div class="card">
+            <span class="sale">SALE</span>
+            <img src="https://whimsical-snickerdoodle-603461.netlify.app/img/e_dra_egm24f100s_1_5d3ec3a1b1.webp">
+            <h4>Product 2</h4>
+            <p>Simple product description</p>
+            <div class="price">$120</div>
+        </div>
+
+        <div class="card">
+            <span class="sale">SALE</span>
+            <img src="https://whimsical-snickerdoodle-603461.netlify.app/img/lg_24u411a_b_den_01_a9e8d6d501.webp">
+            <h4>Product 3</h4>
+            <p>Simple product description</p>
+            <div class="price">$90</div>
+        </div>
+
+        <div class="card">
+            <span class="sale">SALE</span>
+            <img src="https://whimsical-snickerdoodle-603461.netlify.app/img/lg_27up850k_w_1_2c2b67cff4.webp">
+            <h4>Product 4</h4>
+            <p>Simple product description</p>
+            <div class="price">$150</div>
+        </div>
+    </div>
+
+    <footer>
+        © 2026 MyShop. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
