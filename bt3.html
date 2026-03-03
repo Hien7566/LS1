@@ -3,199 +3,258 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khóa Học FrontEnd</title>
+    <title>Chương Trình Tình Nguyện Mùa Hè Xanh 2025</title>
     <style>
+        /* 1. Định dạng chung */
         body {
-            font-family: Arial;
+            font-family: Arial, sans-serif;
             font-size: 16px;
             color: #333;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
         }
 
+        /* 2. Tiêu đề chính - Lấy màu xanh lá theo ảnh */
         h1 {
-            color: #1d4ed8;
+            color: #10a342;
+            /* Màu xanh lá thực tế trong ảnh */
             font-size: 32px;
             font-weight: bold;
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 3px;
+            line-height: 1.3;
+        }
+
+        /* 3. Thông tin thời gian - địa điểm */
+        .info p {
+            margin: 15px 0;
         }
 
         span.label {
-            color: #dc2626;
+            color: #1d4ed8;
+            /* Màu xanh dương trong ảnh */
             font-weight: bold;
+            font-style: italic;
+            /* Chữ nghiêng theo ảnh */
+            text-transform: uppercase;
         }
 
         span.value {
-            color: #000;
+            color: #065f46;
+            /* Màu xanh lá đậm */
             font-size: 16px;
+            margin-left: 10px;
         }
 
+        /* 4. Tiêu đề phụ (h3) - Màu nâu đỏ/cam đậm */
         h3 {
-            color: #7c3aed;
+            color: #9a3412;
             font-size: 22px;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 2px;
+            margin-top: 30px;
         }
 
+        /* 5. Đoạn giới thiệu */
         p {
             color: #065f46;
             font-size: 15px;
             line-height: 1.7;
-            text-align: left;
+            font-style: italic;
+            /* Trong ảnh đoạn này in nghiêng */
+        }
+
+        /* 6. Bảng thông tin */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #333;
         }
 
         th {
-            color: #2563eb;
+            color: #1d4ed8;
+            /* Màu xanh dương */
             font-size: 16px;
-            font-weight: bold;
             text-transform: uppercase;
-            text-align: center;
+            padding: 10px;
         }
 
         td {
             color: #374151;
             font-size: 15px;
+            padding: 10px;
             text-align: center;
-            line-height: 1.6;
         }
 
-        ul,
-        li {
-            color: #92400e;
-            font-size: 14px;
+        /* Dòng cuối cùng của bảng */
+        .note-row {
+            font-style: italic;
+            color: #6b7280;
+        }
+
+        /* 7. Form đăng ký */
+        fieldset {
+            border: 1px solid #a1a1aa;
+            margin-bottom: 20px;
+            padding: 15px;
         }
 
         legend {
             color: #be185d;
-            font-size: 18px;
+            /* Màu hồng đậm */
             font-weight: bold;
             text-transform: uppercase;
+            padding: 0 10px;
         }
 
         label {
             color: #1e40af;
-            font-weight: bold;
+            font-weight: normal;
+            display: block;
+            margin: 10px 0 5px 0;
         }
 
-        input,
+        input[type="text"],
+        input[type="email"],
         select,
-        textarea,
+        textarea {
+            width: 250px;
+            /* Độ dài ô nhập theo ảnh */
+            border: 1px solid #999;
+            padding: 3px;
+        }
+
         button {
-            font-family: Arial;
-            font-size: 14px;
-            color: #000;
+            margin-top: 10px;
+            cursor: pointer;
         }
     </style>
 </head>
 
 <body>
-    <h1>KHÓA HỌC LẬP TRÌNH FRONTEND</h1>
 
-    <div>
-        <span class="label">Thời gian:</span>
-        <span class="value">Thứ 2,4,6 từ 18:30-21:30</span>
+    <h1>Chương Trình Tình Nguyện<br>Mùa Hè Xanh 2025</h1>
+
+    <div class="info">
+        <p>
+            <span class="label">THỜI GIAN:</span>
+            <span class="value">01/07/2025 – 31/08/2025</span>
+        </p>
+        <p>
+            <span class="label">ĐỊA BÀN:</span>
+            <span class="value">Các tỉnh miền Tây Nam Bộ</span>
+        </p>
     </div>
-    <div>
-        <span class="label">Khai giảng:</span>
-        <span class="value">15/01/2024</span>
-    </div>
-    <div>
-        <span class="label">Học phí:</span>
-        <span class="value">6.500.000 VNĐ </span>
-    </div>
 
-    <h3>GIỚI THIỆU KHÓA HỌC</h3>
+    <h3>Giới thiệu chương trình</h3>
+    <p>
+        Mùa Hè Xanh là chương trình tình nguyện thường niên dành cho sinh viên trên toàn quốc.
+        Chương trình hướng đến các hoạt động cộng đồng, xây dựng nông thôn và hỗ trợ giáo dục.
+    </p>
 
-    <p>Khóa học FrontEnd cung cấp kiến thức toàn diện về phát triển giao diện web. Học viên sẽ thành thạo HTML, CSS,
-        JavaScript và các framework hiện đại như ReactJS.</p>
-
-    <p>Sau khóa học, học viên có thể xây dựng website responsive, tương tác và đáp ứng đầy đủ yêu cầu của nhà tuyển
-        dụng.</p>
-
-    <h3>NỘI DUNG HỌC</h3>
-
-    <table border="1">
-        <tr>
-            <th>Tuần</th>
-            <th>Chủ đề</th>
-            <th>Nội dung chi tiết</th>
-        </tr>
-        <tr>
-            <td>1-2</td>
-            <td>HTML & CSS</td>
-            <td>
-                <ul>
-                    <li>Cấu trúc HTML5</li>
-                    <li>CSS Selectors</li>
-                    <li>Flexbox & Grid</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>3-5</td>
-            <td>JavaScript</td>
-            <td>
-                <ul>
-                    <li>ES6+ Syntax</li>
-                    <li>DOM Manipulation</li>
-                    <li>Async/Await</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>6-8</td>
-            <td>ReactJS</td>
-            <td>
-                <ul>
-                    <li>Components & Props</li>
-                    <li>State & Hooks</li>
-                    <li>React Router</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td>9-10</td>
-            <td>Dự Án Thực Tế</td>
-            <td>
-                <ul>
-                    <li>Xây dựng E-commerce</li>
-                    <li>Portfolio Website</li>
-                    <li>Deployment & Hosting</li>
-                </ul>
-            </td>
-        </tr>
+    <h3>Nội dung hoạt động</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Hoạt động</th>
+                <th>Đối tượng</th>
+                <th>Thời gian</th>
+                <th>Ghi chú</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dạy học hè</td>
+                <td>Thiếu nhi</td>
+                <td>Tháng 7</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Xây dựng cầu đường</td>
+                <td>Cộng đồng</td>
+                <td>Tháng 7 - 8</td>
+                <td>Lao động tập thể</td>
+            </tr>
+            <tr>
+                <td>Bảo vệ môi trường</td>
+                <td>Người dân</td>
+                <td>Tháng 8</td>
+                <td>
+                    <ul>
+                        <li>Trồng cây</li>
+                        <li>Thu gom rác</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" style="font-style: italic; color: #666;">
+                    * Sinh viên tham gia được cấp giấy chứng nhận
+                </td>
+            </tr>
+        </tbody>
     </table>
 
-    <h3>ĐĂNG KÝ THAM GIA</h3>
-
+    <h3>Đăng ký tham gia</h3>
     <form>
         <fieldset>
-            <legend>THÔNG TIN ĐĂNG KÝ</legend>
+            <legend>Thông tin cá nhân</legend>
+            <div class="form-group">
+                <label for="name">Họ và tên:</label><br>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="phone">Số điện thoại:</label><br>
+                <input type="text" id="phone" name="phone">
+            </div>
+        </fieldset>
 
-            <label for="name">Họ và tên:</label><br>
-            <input type="text" id="name"><br><br>
+        <fieldset>
+            <legend>Nguyện vọng</legend>
+            <div class="form-group">
+                <label for="location">Khu vực mong muốn:</label><br>
+                <select id="location" name="location">
+                    <option value="tiengiang">Tiền Giang</option>
+                    <option value="bentre">Bến Tre</option>
+                    <option value="cantho">Cần Thơ</option>
+                </select>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="service1">
+                <label for="service1">Tham gia dạy học</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="service2">
+                <label for="service2">Tham gia lao động</label>
+            </div>
+        </fieldset>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email"><br><br>
-
-            <label for="phone">Số điện thoại:</label><br>
-            <input type="tel" id="phone"><br><br>
-
-            <label for="course">Khóa học:</label><br>
-            <select id="course">
-                <option>FrontEnd Cơ bản</option>
-                <option>FrontEnd Nâng cao</option>
-                <option>Fullstack Development</option>
-            </select><br><br>
-
-            <label for="note">Ghi chú:</label><br>
-            <textarea id="note" rows="4"></textarea><br><br>
-
-            <button type="submit">Đăng ký ngay</button>
+        <fieldset>
+            <legend>Xác nhận</legend>
+            <div class="form-group">
+                <textarea rows="4" placeholder="Lời nhắn của bạn..."></textarea>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="confirm">
+                <label for="confirm">Tôi đồng ý tham gia chương trình</label>
+            </div>
+            <br>
+            <button type="submit">Gửi đăng ký</button>
         </fieldset>
     </form>
+
 </body>
 
 </html>
