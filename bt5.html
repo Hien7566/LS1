@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,14 +37,14 @@
 
         .box {
             max-width: 1200px;
-            margin: 0 auto;
+            margin: auto;
             padding: 0 15px;
         }
 
         .row {
             display: flex;
-            gap: 30px;
-            align-items: center;
+            gap: 40px;
+            align-items: flex-start;
             flex-wrap: wrap;
         }
 
@@ -53,25 +54,25 @@
         }
 
         .title {
-            font-size: 30px;
-            margin-bottom: 20px;
+            font-size: 36px;
             text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 40px;
         }
 
         .bg-dark {
-            background: #1a1d2e;
+            background: #0d3b42;
             color: #fff;
-            padding: 60px 0;
+            padding: 80px 0;
         }
 
         .txt-gold {
-            color: #fff200;
+            color: #f5c542;
         }
 
         .header {
-            background-color: #1a1d2e;
+            background: #1a1d2e;
             text-align: center;
-            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -80,13 +81,12 @@
 
         .logo {
             height: 100px;
-            width: auto;
-            object-fit: contain;
         }
 
         .banner {
             height: 100vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+            background:
+                linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)),
                 url('https://static-images.vnncdn.net/files/publish/2023/5/29/anh-1-2382.jpg') center/cover;
             display: flex;
             align-items: center;
@@ -97,9 +97,6 @@
 
         .banner h5 {
             font-size: 22px;
-            font-weight: 500;
-            letter-spacing: 1px;
-            margin-bottom: 5px;
         }
 
         .banner h2 {
@@ -107,20 +104,14 @@
             font-weight: 900;
             color: #fff200;
             margin: 20px 0;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
         }
 
         .btn {
             padding: 12px 40px;
-            font-weight: 600;
-            font-size: 16px;
             border: 1px solid #fff;
-            background: rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, .1);
             color: #fff;
             cursor: pointer;
-            transition: 0.3s;
         }
 
         .btn:hover {
@@ -135,11 +126,11 @@
         .thumb {
             border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
         }
 
         .info li {
-            padding: 8px 0;
+            padding: 10px 0;
             border-bottom: 1px solid #eee;
         }
 
@@ -148,46 +139,137 @@
             margin-right: 10px;
         }
 
+        /* ===== VỊ TRÍ + MAP ===== */
+
         .map-box {
-            border: 3px solid #333;
-            height: 350px;
+            height: 420px;
         }
 
+        .map-box iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+        }
+
+        .check-list {
+            margin: 20px 0;
+        }
+
+        .check-list li {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .check-list li::before {
+            content: "✔";
+            color: #f5c542;
+            margin-right: 8px;
+        }
+
+        /* SƠ ĐỒ PHÂN TẦNG / SẢN PHẨM */
+        .floor {
+            padding: 80px 0;
+            background: #f5f5f5;
+        }
+
+        .floor-img {
+            margin: 40px 0;
+        }
+
+        .product {
+            padding-top: 40px;
+        }
+
+        .product img {
+            max-width: 500px;
+        }
+
+        .product ul {
+            margin: 15px 0;
+        }
+
+        .product li {
+            margin-bottom: 8px;
+        }
+
+        .product li i {
+            margin-right: 6px;
+        }
+
+        .product-text {
+            padding-top: 20px;
+        }
+
+        /* ===== FOOTER ===== */
+        /* ===== FOOTER ===== */
         .footer {
-            background: #0f111a;
-            color: #bbb;
-            padding: 50px 0 20px;
+            background: #1f2b4a;
+            color: #fff;
+            padding: 70px 0 0;
+        }
+
+        .footer .row {
+            gap: 80px;
         }
 
         .f-col h3 {
-            color: #fff;
             margin-bottom: 20px;
+            font-size: 20px;
         }
 
         .inp {
             width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            background: #222;
-            border: 1px solid #444;
-            color: #fff;
+            padding: 12px;
+            margin-bottom: 12px;
+            border: none;
+            border-radius: 5px;
+            background: #eee;
         }
 
         .btn-send {
-            background: #b08b57;
+            width: 100%;
+            background: #d6a54c;
             color: #fff;
             border: none;
-            padding: 10px 20px;
-            width: 100%;
+            padding: 12px;
+            border-radius: 6px;
             cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-send:hover {
+            opacity: .9;
+        }
+
+        .f-col p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+        }
+
+        .f-col i {
+            color: #d6a54c;
+            margin-right: 8px;
         }
 
         .bot-link {
             text-align: center;
             margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #222;
-            font-size: 13px;
+            padding: 20px 0;
+            font-size: 14px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer-row {
+            align-items: center;
+        }
+
+        .copyright {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 14px;
+            opacity: .8;
         }
     </style>
 </head>
@@ -218,49 +300,170 @@
                 <div class="col info">
                     <h3 class="title">TỔNG QUAN DỰ ÁN</h3>
                     <ul>
-                        <li><i class="fa fa-check"></i><b>Vị trí:</b> 58 Bạch Đằng, Đà Nẵng</li>
-                        <li><i class="fa fa-check"></i><b>Chủ đầu tư:</b> Mona Media</li>
-                        <li><i class="fa fa-check"></i><b>Quy mô:</b> 40 tầng nổi</li>
+                        <li><i class="fa fa-arrow-right"></i> <b>Tên dự án:</b> M Landmark Residences</li>
+                        <li><i class="fa fa-arrow-right"></i> <b>Vị trí:</b> Số 58 Đường Bạch Đằng, Quận Hải Châu, TP.
+                            Đà Nẵng</li>
+                        <li><i class="fa fa-arrow-right"></i> <b>Chủ đầu tư:</b> Công ty TNHH Mona Media</li>
+                        <li><i class="fa fa-arrow-right"></i> <b>Nhà thầu thi công:</b> Công ty TNHH Mona Media</li>
+                        <li><i class="fa fa-arrow-right"></i> <b>Đối tác phát triển:</b> DPA Singapore và Marriott
+                            International</li>
+                        <li><i class="fa fa-arrow-right"></i> <b>Diện tích dự án:</b> 2.473,2m2</li>
+                        <li><i class="fa fa-arrow-right"></i> <b>Quy mô dự án:</b> 1 tháp cao 40 tầng nổi + 5 tầng hầm
+                        </li>
+                        <li><i class="fa fa-arrow-right"></i> <b>Loại hình xây dựng:</b> Khách sạn, căn hộ nghỉ dưỡng
+                            cao cấp</li>
+                        <li><i class="fa fa-arrow-right"></i> <b>Sản phẩm Condotel:</b> 288 căn (Từ tầng 2 đến 28)</li>
+                        <li><i class="fa fa-arrow-right"></i> <b>Sản phẩm Căn hộ:</b> 224 căn (từ tầng 29 đến 42)</li>
+                        <li><i class="fa fa-arrow-right"></i> <b>Diện tích căn hộ:</b> 43m2 – 84,3m2</li>
+                        <li><i class="fa fa-arrow-right"></i> <b>Dự kiến hoàn thiện:</b> Quý III/2019</li>
+                        <li><i class="fa fa-arrow-right"></i> <b>Nhân viên dự án:</b> 076 922 0162</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-dark">
+    <section class="bg-dark location">
         <div class="box">
-            <h2 class="title" style="text-align:center">VỊ TRÍ <span class="txt-gold">KIM CƯƠNG</span></h2>
+            <h2 class="title">
+                VỊ TRÍ <span class="txt-gold">“KIM CƯƠNG”</span> TẠI ĐÀ NẴNG
+            </h2>
+
             <div class="row">
-                <div class="col">
-                    <p>Tầm nhìn trực diện sông Hàn. Tọa lạc tại cung đường <span class="txt-gold">Bạch Đằng</span> triệu
-                        đô.</p>
+
+                <!-- TEXT -->
+                <div class="col text-box">
+                    <p>
+                        Siêu dự án tổ hợp khách sạn <span class="txt-gold">Landmark Residences</span>
+                        sở hữu vị trí “Kim Cương” tại Đà Nẵng nằm ngay mặt tiền đường
+                        “triệu đô” Bạch Đằng – cung đường du lịch nổi tiếng bậc nhất.
+                    </p>
+
+                    <ul class="check-list">
+                        <li><b>Phía Đông</b> giáp đường Bạch Đằng nổi tiếng.</li>
+                        <li><b>Phía Bắc</b> giáp tổ hợp khách sạn Marriott Đà Nẵng.</li>
+                        <li><b>Phía Nam</b> giáp cầu quay Sông Hàn – biểu tượng Đà Nẵng.</li>
+                    </ul>
+
+                    <p>
+                        Phóng tầm nhìn ra sông Hàn thơ mộng, đỉnh Sơn Trà hùng vĩ
+                        và biển Đông xanh biếc. Dự án mang lại không gian sống
+                        đẳng cấp giữa trung tâm thành phố.
+                    </p>
                 </div>
+
+                <!-- MAP -->
                 <div class="col map-box">
-                    <iframe src="http://googleusercontent.com/maps.google.com/4" width="100%" height="100%"
-                        style="border:0;"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d958.4671411550489!2d108.22415666961362!3d16.072308887723263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3142183049f64555%3A0x3adaa130768a54cd!2zTSBMYW5kbWFyayBSZXNpZGVuY2VzLCA1OCBC4bqhY2ggxJDhurFuZywgSOG6o2kgQ2jDonUsIMSQw6AgTuG6tW5nIDU1MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1772985768660!5m2!1svi!2s"
+                        width="100%" height="420" style="border:0" loading="lazy">
+                    </iframe>
                 </div>
+
             </div>
+        </div>
+    </section>
+
+    <section class="floor">
+        <div class="box">
+
+            <h2 class="title">SƠ ĐỒ PHÂN TẦNG</h2>
+
+            <div class="floor-img">
+                <img
+                    src="https://whimsical-snickerdoodle-603461.netlify.app/bt/th1/img/Mat-bang-Landmark-4-dien-hinh-1.jpg">
+            </div>
+
+            <h2 class="title">SẢN PHẨM</h2>
+
+            <div class="row product">
+
+                <div class="col">
+                    <img src="https://whimsical-snickerdoodle-603461.netlify.app/bt/th1/img/layout.PNG">
+                </div>
+
+                <div class="col product-text">
+
+                    <p><b>Diện tích căn hộ:</b> 80,3 – 84 m2</p>
+                    <p><b>Tầng:</b> 25 – 38</p>
+
+                    <ul>
+                        <li><i class="fa fa-bed"></i> 1 phòng khách</li>
+                        <li><i class="fa fa-bed"></i> 2 phòng ngủ</li>
+                        <li><i class="fa fa-bath"></i> 2 phòng tắm</li>
+                    </ul>
+
+                    <p>
+                        Thiết kế căn hộ được xây dựng bằng vật liệu cao cấp,
+                        mang phong cách hiện đại với tầm nhìn trực diện sông Hàn.
+                        Các cửa kính lớn giúp đón ánh sáng tự nhiên
+                        và mở ra khung cảnh tuyệt đẹp của thành phố Đà Nẵng.
+                    </p>
+
+                    <ul>
+                        <li><b>Tây Nam:</b> Nhìn ra Sân bay & City View</li>
+                        <li><b>Tây Bắc:</b> Nhìn ra Vịnh Đà Nẵng, Bán Đảo Sơn Trà</li>
+                        <li><b>Đông Bắc:</b> Trực diện Sông Hàn</li>
+                        <li><b>Đông Nam:</b> View Cầu quay Sông Hàn</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
         </div>
     </section>
 
     <footer class="footer">
         <div class="box">
-            <div class="row">
+
+            <div class="row footer-row">
+
+                <!-- FORM -->
                 <div class="col f-col">
-                    <h3>ĐĂNG KÝ</h3>
-                    <input type="text" class="inp" placeholder="Họ tên">
+                    <h3>ĐĂNG KÝ NHẬN TIN</h3>
+
+                    <input type="text" class="inp" placeholder="Họ và tên">
                     <input type="email" class="inp" placeholder="Email">
-                    <button class="btn-send">GỬI NGAY</button>
+                    <input type="text" class="inp" placeholder="Số điện thoại">
+
+                    <button class="btn-send">Đăng ký</button>
                 </div>
+
+                <!-- CONTACT -->
                 <div class="col f-col">
                     <h3>LIÊN HỆ</h3>
-                    <p><i class="fa fa-phone"></i> Hotline: 076 922 0162</p>
-                    <p><i class="fa fa-map-marker"></i> Đà Nẵng, Việt Nam</p>
+
+                    <p><b>Tập đoàn Sunshine Group</b></p>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Tầng 2, 319 - C16 Lý Thường Kiệt, Quận 11, HCM
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-phone"></i>
+                        076 922 0162
+                    </p>
+
+                    <p>
+                        <i class="fa-solid fa-envelope"></i>
+                        demonhunterg@gmail.com
+                    </p>
+
+                    <p>
+                        <i class="fa-brands fa-skype"></i>
+                        demonhunterp
+                    </p>
                 </div>
+
+                <!-- COPYRIGHT -->
+                <div class="col copyright">
+                    © Bản quyền thuộc về. Thiết kế website MonaMedia Mona Media
+                </div>
+
             </div>
-            <div class="bot-link">
-                © Bản quyền thuộc về Mona Media
-            </div>
+
         </div>
     </footer>
 
